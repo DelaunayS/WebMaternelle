@@ -1,0 +1,206 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'playing_cardsregular';
+    src: url('../../polices/cards-webfont.woff2') format('woff2'), url('../../polices/cards-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pictchouregular';
+    src: url("../../polices/pictchou-webfont.woff2") format("woff2"), url("../../polices/pictchou-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 95%;
+    background-color: #d3fcc9;
+}
+
+.container1 {
+    font-size: 20px;
+    width: 100%;
+    min-width: 400px;
+    height: 75px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10vw 65vw 25vw;
+    grid-template-columns: 10vw 65vw 25vw;
+}
+
+.container1 #retour {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.container1 #retour img {
+    width: 9vw;
+    height: auto;
+}
+
+.container1 #retour img:hover {
+    border: #f71111 solid 3px;
+}
+
+.container1 #titre h5 {
+    text-align: center;
+    justify-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 4vw;
+    color: black;
+    margin: 0.5vw;
+}
+
+.container1 #aide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container1 #interrogation input {
+    width: 9vw;
+    height: auto;
+}
+
+.container1 #interrogation input:hover {
+    border: #f71111 solid 3px;
+}
+
+.container1 #flècheRecommencer {
+    justify-self: flex-start;
+}
+
+.container1 #flècheRecommencer img {
+    width: 9vw;
+    height: auto;
+}
+
+.container1 #flècheRecommencer img:hover {
+    border: #f71111 solid 3px;
+}
+
+.container2 {
+    font-size: 20px;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10vw 65vw 25vw;
+    grid-template-columns: 10vw 65vw 25vw;
+}
+
+.container2 .resultat {
+    border: 1px solid black;
+    height: 380px;
+    display: inline-block;
+    width: 8vw;
+    margin: auto;
+    text-align: center;
+}
+
+.container2 .résultat1,
+.container2 .résultat2,
+.container2 .résultat3,
+.container2 .résultat4,
+.container2 .résultat5,
+.container2 .résultat6,
+.container2 .résultat7,
+.container2 .résultat8,
+.container2 .résultat9,
+.container2 .résultat10 {
+    border: 1px solid black;
+    width: 2.25vw;
+    height: 2.25vw;
+    margin: 0.5vw;
+    border-radius: 50%;
+}
+
+.container3 {
+    margin-top: 1vw;
+    font-size: 20px;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 85vw 15vw;
+    grid-template-columns: 85vw 15vw;
+}
+
+.container3 .aide img {
+    width: 100%;
+    height: auto;
+}
+
+.container3 .fermer_aide input {
+    width: 50%;
+    height: auto;
+    border: #1b67da solid 1px;
+}
+
+.container3 .fermer_aide input:hover {
+    border: #f71111 solid 3px;
+}
+
+#cartes {
+    font-family: 'playing_cardsregular';
+    display: grid;
+    height: 200px;
+    grid-template-columns: 33% 33% 33%;
+    padding-bottom: 5%;
+}
+
+#carte1,
+#carte2 {
+    background-color: black;
+    margin: 5%;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 18vw;
+    height: 100%;
+}
+
+#carte1:hover,
+#carte2:hover {
+    background-color: white;
+    transition: all 50ms;
+}
+
+#zoneReponse {
+    margin: 5%;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+}
+
+#taperReponse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+#taperReponse input {
+    font-family: 'pictchouregular';
+    margin: 3%;
+    border: red solid 2px;
+    height: 100px;
+    font-size: 200%;
+    width: 100%;
+}
+
+#validerLaReponse img {
+    margin: 3%;
+    width: 100%;
+    height: auto;
+}
+
+#validerLaReponse img:hover {
+    border: red solid 2px;
+}

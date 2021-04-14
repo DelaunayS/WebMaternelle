@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'script_ecole_2regular';
+    src: url('../polices/scriptecole2-webfont.woff2') format('woff2'), url('../polices/scriptecole2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: auto;
+    background-color: #d3fcc9;
+    font-family: 'script_ecole_2regular';
+}
+
+header {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.flècheRetour {
+    align-items: left;
+}
+
+.flècheRetour img {
+    width: 9vw;
+    height: auto;
+}
+
+.titre {
+    color: rgb(27, 103, 218);
+    font-size: 3vw;
+    margin-left: 100px;
+    margin-right: 150px
+}
+
+.flècheRecommencer img {
+    margin: 5px;
+    width: 9vw;
+    height: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.flècheRecommencer img:hover,
+.interrogation img:hover,
+.flècheRetour img:hover {
+    border: solid 2px rgb(92, 245, 89);
+}
+
+#loto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zone1,
+#zone2,
+#resultat {
+    flex: 1.2;
+    position: relative;
+    background-color: #d3fcc9;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre,
+#retour,
+#zone2 {
+    text-align: center;
+}
+
+#zone2 {
+    width: 40vw;
+    height: 20vw;
+    background-color: white;
+    color: rgb(27, 80, 177);
+    font-size: 18vw;
+}
+
+#retour {
+    color: rgb(177, 27, 27);
+    font-size: 4vw;
+}
+
+input {
+    width: auto;
+    background-color: rgb(18, 173, 44);
+    font-size: 3vw;
+    max-width: 400px;
+}

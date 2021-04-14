@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'pictchouregular';
+    src: url('../../polices/pictchou-webfont.woff2') format('woff2'),
+         url('../../polices/pictchou-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+    
+body{
+        width:95%;       
+        background-color: rgb(211,252,201);
+}
+
+.container1 {
+font-size: 20px;    
+width: 100%;
+min-width: 400px;
+height:75px;   
+display: grid;
+grid-template-columns: 10vw 65vw 25vw; 
+
+    #retour{
+        align-self: flex-start; 
+    }
+    #retour img{
+        width: 9vw;
+        height:auto;
+        &:hover{
+            border : rgb(247, 17, 17) solid 3px;
+        }      
+    }
+    #titre h5{
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        font-size:4vw;
+        color:black;
+        margin: 0.5vw;
+    }
+    #aide{
+        display: flex;
+    }
+    #interrogation input{
+        width: 9vw;
+        height:auto;
+        &:hover{
+            border : rgb(247, 17, 17) solid 3px;
+        }                  
+    }
+    #flècheRecommencer{        
+        justify-self: flex-start;
+        
+    }
+    #flècheRecommencer img{    
+        width: 9vw;
+        height:auto;
+        &:hover{
+            border : rgb(247, 17, 17) solid 3px;
+        }      
+    }
+}
+
+.container2 {
+    font-size: 20px;    
+    width: 100%;
+    min-width: 400px;
+    height:auto;    
+    display: grid;
+    grid-template-columns: 10vw 65vw 25vw; 
+   
+    .resultat{ 
+        border :1px solid black;      
+        height:380px;
+        display:inline-block;    
+        width:8vw;  
+        margin:auto; 
+        text-align: center;            
+    }
+    .résultat1,.résultat2,.résultat3,.résultat4,.résultat5,
+    .résultat6,.résultat7,.résultat8,.résultat9,.résultat10{
+        border :1px solid black; 
+        width :2.25vw;
+        height:2.25vw;
+        margin :0.5vw;    
+        border-radius :50%;  
+    }
+
+    .bouton{
+        background-color: rgb(159, 245, 173);
+        font-size: 6.5vw;
+        padding:0.5vw;
+        margin:0.5vw;        
+        font-family:'pictchouregular',Arial;    
+        &:hover{
+            background-color: rgb(27, 103, 218);
+            transition: 0,1s;
+        }
+        &:visited{
+            background-color: rgb(159, 245, 173);
+       }        
+    }
+   
+    .boite_image{
+        display: inline-block;
+        position: relative;
+        .cible_img{
+            width:17vw;
+            height:auto;
+            margin :0.5vw;
+            display:flex;
+            flex-direction: column;
+        }
+        p{    
+            color:rgb(240, 16, 16);
+            position: absolute; 
+            bottom: 0;right:0;left:0;top:0;     
+            opacity: 1;
+            text-align: center;
+            font-size : 15vw; 
+            margin: auto;   
+        }
+    }
+}
+
+.container3 {
+    margin-top: 1vw;    
+    font-size: 20px;    
+    width: 100%;
+    min-width: 400px;
+    height:auto;    
+    display: grid;
+    grid-template-columns: 85vw 15vw; 
+    .aide img{
+        width:100%;
+        height:auto;
+    }
+    .fermer_aide input{
+        width:50%;
+        height:auto;
+        border : rgb(27, 103, 218) solid 1px; 
+        &:hover{
+            border : rgb(247, 17, 17) solid 3px;
+        }      
+    }   
+}
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Compléments
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/style_complement.css">
+
+    </head>
+
+    <body>
+
+        <!-- Haut de page -->
+        <header>
+            <div class="flècheRetour">
+                <img src='../img/retour_fleche.png' onClick=window.location.href='../index.html'>
+            </div>
+            <div class="titre">
+                Compléments
+            </div>
+            <div class="interrogation">
+                <img src='../img/interrogation_fleche.png'>
+                <span>Trouve combien il manque de points entre ton point de départ (case bleue) et le nombre sur la cible.
+                </span>
+            </div>
+            <div class="flècheRecommencer">
+                <a href="complement.html" color=black>
+                <img src='../img/recommencer_fleche.png' width="50px" height="50px"></a>
+            </div>        
+           
+        </header>        
+    </br>
+        <div class="zone1">
+            <!-- Zone des nombres à choisir -->
+            <div class="zone1_A">
+                <input class="bouton" type="button" value="0">
+                <input class="bouton" type="button" value="1">
+                <input class="bouton" type="button" value="2">
+                <input class="bouton" type="button" value="3">
+                <input class="bouton" type="button" value="4">
+                <input class="bouton" type="button" value="5">
+                <input class="bouton" type="button" value="6">
+                <input class="bouton" type="button" value="7">
+                <input class="bouton" type="button" value="8">
+                <input class="bouton" type="button" value="9"> 
+                <input class="bouton" type="button" value="10">
+            </div>
+
+            <div class="espace"></div>     
+
+            <!-- Zone de smiley résultat-->
+            <div class="zone1_B">
+                <canvas id=canvas>
+                    <div >
+                        <img src='../img/smile_content.jpg'>
+                        <img src='../img/smile_triste.jpg'>
+                    </div>
+               </canvas>
+            </div>
+            
+        </div>
+
+        <!-- Zone d'espace -->
+        <div class="zone2"> </div>
+
+        <!-- Zone des nombres cibles-->
+        <div class="zone3">            
+                <div class="nombre0">0</div>
+                <div class="nombre1">1</div>
+                <div class="nombre2">2</div>
+                <div class="nombre3">3</div>
+                <div class="nombre4">4</div>
+                <div class="nombre5">5</div>
+                <div class="nombre6">6</div>
+                <div class="nombre7">7</div>
+                <div class="nombre8">8</div>
+                 <div class="nombre9">9</div>
+                <div class="nombre10">10</div>
+                <div class="espace"></div>        
+                <div class="boite_image">
+                    <img classe="cible" src='../img/cible.jpg'> 
+                    <div class="texte_image">
+                    <p>1</p>
+                    </div> 
+                </div>
+        </div>
+
+        <!-- Zone des résultats mémorisés -->
+        <div class="zone4">
+            <div class="résultat1"></div>
+            <div class="résultat2"></div>
+            <div class="résultat3"></div>
+            <div class="résultat4"></div>
+            <div class="résultat5"></div>
+            <div class="résultat6"></div>
+            <div class="résultat7"></div>
+            <div class="résultat8"></div>
+            <div class="résultat9"></div>
+            <div class="résultat10"></div>
+        </div>        
+
+        </br>           
+
+        <script src="../js/jquery-3.5.0.min.js"></script>
+	    <script src="../js/complement.js"></script>
+        <script src="../js/StopClicDroit.js"></script>
+
+    </body>
+
+</html>

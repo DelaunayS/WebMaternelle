@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'pictchouregular';
+  src: url("../../polices/pictchou-webfont.woff2") format("woff2"), url("../../polices/pictchou-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.col {
+  font-family: 'pictchouregular';
+  font-size: 250%;
+}
+/*# sourceMappingURL=GenerateurPlanche.css.map */

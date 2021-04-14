@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="../css/style_loto_lettre.css" />
+        <title> LOTO de lettres </title>
+    </head>
+
+    <body>
+	
+		<header>
+            <div class="flècheRetour">
+                <img src='../img/retour_fleche.png' onClick=window.location.href='../index.html'>
+            </div>
+            <div class="titre">
+                Loto de lettres
+            </div>
+            
+            <div class="flècheRecommencer">
+                <a href="Loto_lettres.html" color=black>
+                <img src='../img/recommencer_fleche.png' width="50px" height="50px"></a>
+            </div>        
+           
+        </header> 
+
+	<div class="loto">
+		<div class="zone1">						
+		
+			<input class="tirage"
+			type="button"
+			value="Tirage">
+		
+			<div class ="element2">
+		</br>	
+			</div>		
+		
+			<input class="verification"
+			type="button"
+			value="Vérification">
+					
+		</div>
+
+		</br>
+		
+		<div class="zone2">
+			<canvas id="canvas" width="300" height="400">
+				<div style="display:none;">
+					<img src="../img/A.gif">
+					<img src="../img/B.gif">
+					<img src="../img/C.gif">
+					<img src="../img/D.gif">
+					<img src="../img/E.gif">
+					<img src="../img/F.gif">
+					<img src="../img/G.gif">
+					<img src="../img/H.gif">
+					<img src="../img/I.gif">
+					<img src="../img/J.gif">
+					<img src="../img/K.gif">
+					<img src="../img/L.gif">
+					<img src="../img/M.gif">
+					<img src="../img/N.gif">
+					<img src="../img/O.gif">
+					<img src="../img/P.gif">
+					<img src="../img/Q.gif">
+					<img src="../img/R.gif">
+					<img src="../img/S.gif">
+					<img src="../img/T.gif">
+					<img src="../img/U.gif">
+					<img src="../img/V.gif">
+					<img src="../img/W.gif">
+					<img src="../img/X.gif">
+					<img src="../img/Y.gif">
+					<img src="../img/Z.gif">
+
+				</div>
+			</canvas>			
+		</div>
+		
+	</div>	
+	
+	<div class="resultat">
+				
+	</div>
+</br>	
+		
+	<script src="../js/jquery-3.5.0.min.js"></script>
+	<script src="../js/loto_lettres.js"></script>
+	<script src="../js/StopClicDroit.js"></script>
+	
+	</body>
+	
+<footer>
+	
+	<div class=planches>
+		<a href="https://app.box.com/s/rmlfeopw2idmky0ayqhshuaazltgf935" color=black>Planches de jeu</a>
+	</div>
+</footer>
+</html>

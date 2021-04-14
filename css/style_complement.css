@@ -1,0 +1,147 @@
+body{
+    width:1000px;
+    background-color: #d3fcc9;
+}
+
+header{
+    width:1000px;
+    display:flex;
+    text-align: center;
+    height:50px;
+}
+.flècheRetour{
+    align-items:left;
+}
+
+.flècheRetour img{
+    width: 9vw;
+    height:auto;
+}
+
+.titre{
+    color:rgb(27, 103, 218);
+    font-size:30px;
+    margin-left : 100px;
+    margin-right: 150px
+}
+
+.interrogation{
+    align-items:right;
+}
+
+.interrogation img {
+    width:9vw;
+    height:auto;
+    position: relative;
+}
+.interrogation span {
+    color : red ;
+    visibility: hidden;
+    position: absolute;
+    top:50px;    
+    opacity: 1;  
+}
+ 
+.interrogation img:hover + span {
+    visibility: visible;
+}
+
+.zone1{    
+    height:120px;
+    width: 1000px;     
+    display :flex;
+    padding:5px ;   
+    align-items: center;    
+}
+.zone1_A{
+    font-size: 30px;
+    color : orange;
+}
+
+.bouton{
+    background-color: rgb(159, 245, 173);
+    font-size: 72px;  
+    margin: 3px;  
+}
+
+.bouton:hover{
+    background-color: rgb(27, 103, 218);
+    transition: 0,1s;
+}
+
+#canvas{
+    height:100px;
+    width:100px;
+}
+
+.zone2{
+    height:10px;
+}
+
+.zone3{
+    height:120px;
+    width: 1000px;  
+    display:flex; 
+    padding:5px;
+    align-items: center;
+}
+
+.nombre0,.nombre1,.nombre2,.nombre3,.nombre4,.nombre5,
+.nombre6,.nombre7,.nombre8,.nombre9,.nombre10{
+    border:blue 1px solid;
+    color:blue;
+    font-size: 60px;
+    padding:10px;
+}
+
+.espace{
+    font-size: 60px;
+    padding:5px;
+}
+
+.boite_image img{
+    width:100px;
+    height:auto;
+}
+
+.boite_image{
+    display: inline-block;
+    position: relative;
+}
+.texte_image{    
+    color:rgb(245, 12, 30 );
+    position: absolute; 
+    bottom: 0;right:0;left:0;top:0;     
+    opacity: 1;
+    text-align: center;
+    font-size : 85px; 
+    margin: auto;   
+}
+
+.zone4{
+    height:40px;
+    width:420px;
+    display:flex; 
+    padding:5px;
+    align-items:center;    
+}
+.résultat1,.résultat2,.résultat3,.résultat4,.résultat5,
+.résultat6,.résultat7,.résultat8,.résultat9,.résultat10{
+    height:8px;
+    width :8px;
+    padding: 12px;
+    margin :5px;
+    border-radius :25px;
+}
+
+.flècheRecommencer img{
+    margin:5px;
+    width:9vw;
+    height:auto;
+}
+a:link{	
+	text-decoration:none;
+    }
+.flècheRecommencer img:hover,.interrogation img:hover,.flècheRetour img:hover{
+    border :solid 2px rgb(92, 245, 89);
+}

@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'cursive_standardregular';
+    src: url('../polices/cursive_standard-webfont.woff2') format('woff2'), url('../polices/cursive_standard-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'script_ecole_2regular';
+    src: url('../polices/scriptecole2-webfont.woff2') format('woff2'), url('../polices/scriptecole2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'script_ecole_2regular';
+    width: 98%;
+    background-color: #d3fcc9;
+}
+
+header {
+    width: 800px;
+    display: flex;
+    text-align: center;
+    height: 50px;
+    margin: 10px;
+}
+
+.flècheRetour {
+    align-items: left;
+}
+
+.flècheRetour img {
+    width: 9vw;
+    height: auto;
+}
+
+.titre {
+    font-size: 30px;
+    width: 600px;
+    color: rgb(27, 103, 218);
+}
+
+span {
+    font-size: 25px;
+}
+
+.interrogation {
+    align-items: right;
+}
+
+.interrogation img {
+    width: 9vw;
+    height: auto;
+    position: relative;
+}
+
+.interrogation span {
+    color: red;
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    opacity: 1;
+}
+
+.interrogation img:hover+span {
+    visibility: visible;
+}
+
+.zone1 {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.zone1_A {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(234, 246, 147);
+    color: orange;
+    font-size: 4vw;
+}
+
+.zone1_B {
+    display: inline-block;
+    width: 150px;
+    height: 300px;
+}
+
+.bouton0,
+.bouton1,
+.bouton2 {
+    font-size: 60px;
+}
+
+.bouton0,
+.bouton1,
+.bouton2,
+.bouton3,
+.bouton4,
+.bouton5 {
+    width: 150px;
+    background-color: rgb(159, 245, 173);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.bouton3,
+.bouton4,
+.bouton5 {
+    font-size: 25px;
+}
+
+.bouton2,
+.bouton5 {
+    font-family: 'cursive_standardregular';
+}
+
+.bouton0:hover,
+.bouton1:hover,
+.bouton2:hover,
+.bouton3:hover,
+.bouton4:hover,
+.bouton5:hover {
+    background-color: rgb(27, 103, 218);
+    transition: 0, 1s;
+}
+
+.bouton0:active,
+.bouton1:active,
+.bouton2:active,
+.bouton3:active,
+.bouton4:active,
+.bouton5:active {
+    background-color: rgb(159, 245, 173);
+    transition: 0, 1s;
+}
+
+.boite_image {
+    display: inline-block;
+    position: relative;
+}
+
+p {
+    color: rgb(12, 16, 245);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    text-align: center;
+    font-size: 4vw;
+    margin: auto;
+    font-family: 'script_ecole_2regular';
+}
+
+#canvas {
+    height: 250px;
+    width: 250px;
+}
+
+.zone2 {
+    height: 5px;
+}
+
+.zone3_zone4_zone5 {
+    display: grid;
+    grid-template-rows: 45% 35% 20%;
+}
+
+.zone3 {
+    width: 99%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.zoneChoix {
+    text-align: center;
+    margin: 0.5vw;
+    font-size: 5vw;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.Resultat {
+    margin: 0.5vw;
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: rgb(27, 103, 218);
+}
+
+.zone4 {
+    margin: 0.5vw;
+    display: flex;
+}
+
+.zone5 {
+    margin: 1vw;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.résultat1,
+.résultat2,
+.résultat3,
+.résultat4,
+.résultat5,
+.résultat6,
+.résultat7,
+.résultat8,
+.résultat9,
+.résultat10 {
+    height: 4px;
+    width: 4px;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.flècheRecommencer img {
+    margin: 5px;
+    width: 9vw;
+    height: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.flècheRecommencer img:hover,
+.interrogation img:hover,
+.flècheRetour img:hover {
+    border: solid 2px rgb(92, 245, 89);
+}
